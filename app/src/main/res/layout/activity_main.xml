@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="16dp"
+    android:fitsSystemWindows="true"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="0dp"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentTop="true"
+        android:text=""
+        android:textSize="92sp"
+        android:id="@+id/time_view"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/start_button"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/time_view"
+        android:text="@string/start"
+        android:layout_marginTop="10dp"
+        android:onClick="onClickStart" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/stop_button"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/start_button"
+        android:text="@string/stop"
+        android:layout_marginTop="20dp"
+        android:onClick="onClickStop" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/restart_button"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/stop_button"
+        android:text="@string/restart"
+        android:layout_marginTop="20dp"
+        android:onClick="onClickRestart" />
+</RelativeLayout>
